@@ -1,0 +1,141 @@
+* {
+    color: #000;
+}
+
+body {
+    max-height: 100vh;
+    background: url("/assets/img/404_background.png") fixed center;
+    backdrop-filter: blur(25px);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.mobile-menu {
+    display: none;
+    height: 16px;
+    width: auto;
+}
+
+.logo {
+    height: 40px;
+    width: auto;
+    padding: 26px 0 42px 0;
+}
+
+header{
+    position: relative;
+}
+
+header>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.desktop-menu {
+    position: absolute;
+    font-variant: small-caps;
+    font-family: 'Clash Display', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 100%;
+    letter-spacing: 0.21em;
+    left:64px;
+}
+
+.desktop-menu img {
+    height: 9px;
+    width: auto;
+    margin-left: 8px;
+}
+
+div.content {
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+}
+
+.content h2,
+.content p {
+    margin-bottom: 32px;
+}
+
+.content h1 {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 160px;
+    line-height: 100%;
+    letter-spacing: 0.03em;
+}
+
+.content h2 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 100%;
+    letter-spacing: 0.03em;
+}
+
+.content p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0.23em;
+}
+
+.content button {
+    transition: background .2s ease;
+    box-sizing: border-box;
+    width: 200px;
+    height: 58px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.24em;
+    color: #fff;
+    padding: 20px 47px;
+    background: #0047FF;
+    border: none;
+    text-transform: uppercase;
+    box-shadow: 6px 57px 23px rgba(26, 113, 255, 0.04), 3px 32px 20px rgba(26, 113, 255, 0.13), 2px 14px 14px rgba(26, 113, 255, 0.21), 0px 4px 8px rgba(26, 113, 255, 0.25), 0px 0px 0px rgba(26, 113, 255, 0.25);
+}
+
+.content button:hover {
+    background: #2F69FF;
+}
+
+@media only screen and (max-width:768px){
+    .desktop-menu{
+        display: none;
+    }
+    .mobile-menu{
+        position: absolute;
+        display: inline;
+        left: 24px;
+    }
+    .logo{
+        height: 36px;
+        padding:16px 0 24px 0;
+    }
+    .container{
+        padding: 0 24px;
+    }
+    .content{
+        padding: 0 24px 0 24px;
+    }
+    .content h1{
+        font-size: 120px;
+    }
+    .content h2{
+        font-size: 42px;
+    }
+}

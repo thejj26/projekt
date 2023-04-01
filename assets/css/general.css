@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    color:#000;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container {
+    padding-left: 135px;
+    padding-right: 135px;
+}
+
+.maxw {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(12,minmax(0,1fr));
+    gap:32px;
+}
