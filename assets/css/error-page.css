@@ -10,46 +10,6 @@ body {
     background-size: cover;
 }
 
-.mobile-menu {
-    display: none;
-    height: 16px;
-    width: auto;
-}
-
-.logo {
-    height: 40px;
-    width: auto;
-    padding: 26px 0 42px 0;
-}
-
-header{
-    position: relative;
-}
-
-header>div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.desktop-menu {
-    position: absolute;
-    font-variant: small-caps;
-    font-family: 'Clash Display', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 13px;
-    line-height: 100%;
-    letter-spacing: 0.21em;
-    left:64px;
-}
-
-.desktop-menu img {
-    height: 9px;
-    width: auto;
-    margin-left: 8px;
-}
-
 div.content {
     position: absolute;
     top: 50vh;
@@ -113,29 +73,16 @@ div.content {
     background: #2F69FF;
 }
 
-@media only screen and (max-width:768px){
-    .desktop-menu{
-        display: none;
-    }
-    .mobile-menu{
-        position: absolute;
-        display: inline;
-        left: 24px;
-    }
-    .logo{
-        height: 36px;
-        padding:16px 0 24px 0;
-    }
-    .container{
-        padding: 0 24px;
-    }
-    .content{
+@media only screen and (max-width:768px) {
+    .content {
         padding: 0 24px 0 24px;
     }
-    .content h1{
+
+    .content h1 {
         font-size: 120px;
     }
-    .content h2{
+
+    .content h2 {
         font-size: 42px;
     }
 }

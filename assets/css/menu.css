@@ -1,0 +1,83 @@
+* {
+    color: #fff;
+}
+
+body {
+    height: 100vh;
+    background: #345ABB;
+}
+
+.desktop-menu img {
+    width: 25px;
+    height: auto;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+    margin-bottom: 64px;
+}
+
+.menu a {
+    font-family: 'Rische';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 172%;
+    letter-spacing: 0.03em;
+    width: fit-content;
+}
+
+.language {
+    display: flex;
+    gap: 24px;
+}
+
+.language p {
+    font-family: 'Work Sans', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0.23em;
+    color: #E4E4E4;
+}
+
+.language .active {
+    color: #fff;
+    position: relative;
+}
+
+.active::after {
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    height: 2px;
+    width: 36px;
+    top: 21px;
+    left: 0;
+}
+
+@media only screen and (max-width:768px) {
+    .menu {
+        margin-top: 148px;
+    }
+
+    .menu a {
+        font-size: 42px;
+        line-height: 160%;
+    }
+
+    .language {
+        gap: 29px;
+    }
+
+    .language p {
+        font-size: 16px;
+    }
+
+    .active::after {
+        width: 41px;
+    }
+}
