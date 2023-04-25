@@ -49,12 +49,11 @@
 }
 
 .terms-content {
-    grid-column: span 12;
+    grid-column: 2 / span 10;
     display: flex;
     flex-direction: column;
     gap: 128px;
     align-items: center;
-    padding: 0 100px;
 }
 
 .term-box {
