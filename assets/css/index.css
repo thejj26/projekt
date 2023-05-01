@@ -1,12 +1,20 @@
 .landing {
     height: 100vh;
-    background: url("/assets/img/landing.png") fixed center;
+    background: url("/assets/img/landing.png") center;
     background-blend-mode: darken;
     background-color: rgba(0, 0, 0, 0.4);
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
     z-index: -1;
+}
+
+header {
+    position: static !important;
+}
+
+header.maxw {
+    position: relative;
 }
 
 .desktop-menu {
@@ -315,25 +323,26 @@ button.round.disabled img {
     margin-top: 180px;
 }
 
-.maxw.experience{
+.maxw.experience {
     position: relative;
 }
 
 .experience .img-container {
-    height: 860px;
-    grid-column: span 4;
+    height: 100vh;
+    grid-column: span 5;
 }
 
 .experience .img-container img {
-    height: 860px;
+    height: 100vh;
     width: auto;
     position: absolute;
-    left:-135px;
+    left: -135px;
 }
 
 .experience .content {
-    grid-column: 7/12;
+    grid-column: 8 / span 5;
     align-self: center;
+    width: 100%;
 }
 
 .comments {
@@ -363,6 +372,14 @@ button.round.disabled img {
     margin-bottom: 16px;
 }
 
+.comments .content {
+    position: relative;
+    left: 0;
+    width: calc(100% + 198px);
+    display: flex;
+    gap: 32px;
+}
+
 .comment p {
     font-family: 'Work Sans', sans-serif;
     font-style: normal;
@@ -373,15 +390,15 @@ button.round.disabled img {
 }
 
 .comment {
-    grid-column: span 7;
     padding: 142px 59px 112px 59px;
     display: flex;
     flex-direction: column;
     gap: 16px;
     align-items: center;
     justify-content: center;
-    position: relative;
     align-self: flex-end;
+    box-sizing: border-box;
+    width: 50%;
 }
 
 .comment h4 {
@@ -398,7 +415,197 @@ button.round.disabled img {
     align-items: center;
 }
 
-.comment img{
+.comment img {
     width: 48px;
     height: 48px;
+}
+
+.ensure {
+    margin-top: 180px;
+    height: 100vh;
+    background: url("../img/boat_top_down.png") center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.ensure .grid>div {
+    grid-column: span 5;
+    margin-bottom: 140px;
+}
+
+.ensure span {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0.23em;
+    color: #FFFFFF;
+}
+
+.ensure h2 {
+    font-family: 'Rische';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 54px;
+    line-height: 110%;
+    color: #FFFFFF;
+    margin-bottom: 32px;
+    margin-top: 16px;
+}
+
+.ensure button {
+    width: 228px;
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.24em;
+    color: #FFFFFF;
+}
+
+.why-yolo {
+    margin-top: 180px;
+}
+
+.why-yolo .img-container {
+    position: absolute;
+}
+
+.why-yolo .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding: 0 140px;
+    position: relative;
+    margin-bottom: 707px;
+}
+
+.why-yolo .title span {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 100%;
+    text-align: center;
+    letter-spacing: 0.23em;
+    color: #0047FF;
+}
+
+.why-yolo .title h3 {
+    font-family: 'Rische';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 54px;
+    line-height: 110%;
+    text-align: center;
+    position: relative;
+}
+
+.why-yolo .title h3::after {
+    content: "";
+    background: url("/assets/img/shine.svg") no-repeat center;
+    background-size: contain;
+    position: absolute;
+    height: 70px;
+    width: 76px;
+    bottom: -11px;
+    right: 133px;
+    transform: translateY(100%);
+}
+
+.why-yolo .title::after {
+    position: absolute;
+    height: 572px;
+    width: 436px;
+    background: url("/assets/img/boat_in_port.png") center no-repeat;
+    background-size: cover;
+    content: "";
+    top: calc(100% - 45px);
+    z-index: -1;
+    left: calc(50% - 29px);
+    transform: translateX(-50%);
+}
+
+.why-yolo .maxw {
+    position: relative;
+}
+
+.img-container-relative {
+    position: absolute;
+    bottom: -5px;
+    transform: translate(-50%, 100%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: calc(100% + 40px);
+    left: 50%;
+}
+
+@media only screen and (max-width:1200px) {
+    .experience .content{
+        grid-column: 9/span 4;
+    }
+    .container{
+        padding: 0 100px !important;
+    }
+    .about .img-container::after {
+        right: -40px;
+        top:5px;
+    }
+    .discover .content{
+        grid-column: span 5;
+    }
+    .discover .img-container{
+        grid-column: 7 /span 5;
+    }
+    .discover .img-container{
+        min-height: 500px;
+    }
+    .image-slider div{
+        width: 300px;
+        height: 500px;
+    }
+    .comments .image-navigation {
+        margin: 0;
+    }
+    .comments h2 {
+        font-size: 44px;
+    }
+    .comments .content{
+    width: calc(100% + 140px);
+    }
+    .comment{
+        padding: 120px 34px 100px 34px;
+    }
+    .why-yolo .title{
+        padding: 0 80px;
+    }
+    .why-yolo .title::after{
+        height: 429px;
+        width: 327px;
+        left: calc(50% - 18px);
+    }
+    .why-yolo .title h3::after{
+        bottom: -18px;
+        right: 108px;
+        width: 61px;
+        height: 56px;
+    }
+    .img-container-relative img:first-of-type{
+        width: 160px !important;
+        height: auto;
+    }
+    .img-container-relative img:last-of-type{
+        width: 171px !important;
+        height: auto;
+    }
+    .ensure .grid > div{
+        grid-column: span 7;
+    }
 }
