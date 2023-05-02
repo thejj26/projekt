@@ -548,64 +548,158 @@ button.round.disabled img {
 }
 
 @media only screen and (max-width:1200px) {
-    .experience .content{
+    .experience .content {
         grid-column: 9/span 4;
     }
-    .container{
+
+    .container {
         padding: 0 100px !important;
     }
+
     .about .img-container::after {
         right: -40px;
-        top:5px;
+        top: 5px;
     }
-    .discover .content{
+
+    .discover .content {
         grid-column: span 5;
     }
-    .discover .img-container{
+
+    .discover .img-container {
         grid-column: 7 /span 5;
     }
-    .discover .img-container{
+
+    .discover .img-container {
         min-height: 500px;
     }
-    .image-slider div{
+
+    .image-slider div {
         width: 300px;
         height: 500px;
     }
+
     .comments .image-navigation {
         margin: 0;
     }
+
     .comments h2 {
         font-size: 44px;
     }
-    .comments .content{
-    width: calc(100% + 140px);
+
+    .comments .content {
+        width: calc(100% + 140px);
     }
-    .comment{
+
+    .comment {
         padding: 120px 34px 100px 34px;
     }
-    .why-yolo .title{
+
+    .why-yolo .title {
         padding: 0 80px;
     }
-    .why-yolo .title::after{
+
+    .why-yolo .title::after {
         height: 429px;
         width: 327px;
         left: calc(50% - 18px);
     }
-    .why-yolo .title h3::after{
+
+    .why-yolo .title h3::after {
         bottom: -18px;
         right: 108px;
         width: 61px;
         height: 56px;
     }
-    .img-container-relative img:first-of-type{
+
+    .img-container-relative img:first-of-type {
         width: 160px !important;
         height: auto;
     }
-    .img-container-relative img:last-of-type{
+
+    .img-container-relative img:last-of-type {
         width: 171px !important;
         height: auto;
     }
-    .ensure .grid > div{
+
+    .ensure .grid>div {
         grid-column: span 7;
+    }
+}
+
+@media only screen and (max-width:1024px) {
+    .container {
+        padding: 0 60px !important;
+    }
+
+    .about .img-container {
+        grid-column: 2/span 10;
+        margin-bottom: 64px;
+    }
+
+    .about .content {
+        grid-column: span 12;
+        align-self: normal;
+    }
+
+    .about .img-container::after {
+        width: 61px;
+        height: 56px;
+    }
+
+    .main h3 {
+        font-size: 50px;
+    }
+
+    .main h4,
+    .content-numbers div p:first-of-type {
+        font-size: 22px;
+    }
+
+    .main p {
+        font-size: 14px;
+    }
+
+    .main .blue {
+        margin-top: 24px;
+    }
+
+    .discover .content,
+    .discover .img-container {
+        grid-column: span 12;
+    }
+
+    .image-slider {
+        gap: 40px;
+    }
+
+    .discover .img-container {
+        margin-top: 48px;
+        grid-column: span 12;
+        position: relative;
+    }
+
+    .image-navigation {
+        justify-content: start;
+        margin-left: 16px;
+    }
+
+    .image-slider div {
+        width: 350px;
+    }
+
+    .experience .img-container {
+        grid-column: span 12;
+        display: flex;
+        justify-content: center;
+    }
+
+    .experience .img-container img {
+        position: static;
+        width: auto;
+    }
+
+    .experience .content {
+        grid-column: span 9;
+        margin-top: 64px;
     }
 }
