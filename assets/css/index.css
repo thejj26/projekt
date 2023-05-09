@@ -1,6 +1,6 @@
 .landing {
     height: 100vh;
-    background: url("/assets/img/landing.png") center;
+    background: url("/assets/img/landing.png") 75%;
     background-blend-mode: darken;
     background-color: rgba(0, 0, 0, 0.4);
     background-repeat: no-repeat;
@@ -423,7 +423,7 @@ button.round.disabled img {
 .ensure {
     margin-top: 180px;
     height: 100vh;
-    background: url("../img/boat_top_down.png") center;
+    background: url("../img/boat_top_down.png") 50%;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -701,5 +701,169 @@ button.round.disabled img {
     .experience .content {
         grid-column: span 9;
         margin-top: 64px;
+    }
+
+    .comments .content {
+        width: calc(100% + 60px)
+    }
+
+    .comment {
+        padding: 60px 12px;
+    }
+
+    .comment p {
+        font-size: 17px;
+    }
+
+    .comment h4 {
+        font-size: 22px;
+    }
+
+    .comment img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .why-yolo .title h3 {
+        font-size: 48px;
+    }
+
+    .why-yolo .img-container-relative {
+        width: calc(100% + 100px);
+    }
+
+    .why-yolo .title::after {
+        top: calc(100% - 35px);
+        left: calc(50% - 10px);
+    }
+
+    .why-yolo .title h3::after {
+        right: 50px;
+        width: 55px;
+        height: 50px;
+    }
+
+    .why-yolo .title {
+        margin-bottom: 574px;
+    }
+}
+
+@media only screen and (max-width:768px) {
+
+    .scroll,
+    .inquire,
+    .image-navigation {
+        display: none;
+    }
+
+    .explore h2 {
+        font-size: 54px;
+    }
+
+    .btn-empty {
+        width: 220px;
+        height: 48px;
+        font-size: 12px;
+    }
+
+    .about .img-container {
+        grid-column: span 2;
+    }
+
+    .about .content {
+        grid-column: span 2;
+    }
+
+    .discover>div,
+    .experience>div {
+        grid-column: span 2 !important;
+    }
+
+    .main {
+        margin-top: 128px;
+    }
+
+    .about .img-container::after {
+        height: 70px;
+        width: 76px;
+        right: -24px;
+        top: -36px;
+    }
+
+    .main h4,
+    .content-numbers div p:first-of-type {
+        font-size: 24px;
+    }
+
+    .main p {
+        font-size: 16px;
+    }
+
+    .content-numbers {
+        margin-bottom: 48px;
+    }
+
+    .content-numbers div p:last-of-type {
+        font-size: 13px;
+    }
+
+    .image-slider {
+        min-height: 460px;
+    }
+
+    .discover .img-container {
+        width: 300px;
+        height: 460px;
+    }
+
+    .image-slider div {
+        padding: 0 0 32px 32px;
+    }
+
+    .image-slider span {
+        font-size: 14px;
+    }
+
+    .image-slider h4 {
+        font-size: 34px;
+    }
+
+    .experience .img-container {
+        height: fit-content;
+    }
+
+    .experience .img-container img {
+        width: calc(100% + 48px);
+        height: auto;
+    }
+
+    .comments .content {
+        width: fit-content;
+        position: relative;
+        gap: 20px;
+    }
+
+    .comment p {
+        font-size: 18px;
+    }
+
+    .comment {
+        padding: 58px 24px;
+        width: calc(100vw - 140px) !important;
+    }
+
+    .ensure .grid>div {
+        margin-bottom: 64px;
+        grid-column: span 2;
+    }
+
+    .ensure .maxw {
+        margin: 0;
+    }
+
+    .ensure h2 {
+        font-size: 50px;
+        padding-right: 20%;
+        max-width: 400px;
     }
 }
