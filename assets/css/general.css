@@ -48,7 +48,7 @@ body {
 .mobile-menu {
     display: none;
     height: 16px;
-    width: auto;
+    width: 32px;
     padding-top: 10px;
 }
 
@@ -294,6 +294,7 @@ header>div {
     .grid {
         grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
         gap: 24px;
+        row-gap: 0;
     }
 
     .contact {
