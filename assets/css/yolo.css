@@ -1,0 +1,605 @@
+.landing {
+    background-image: url("/assets/img/boat_background.png");
+    background-position: center;
+}
+
+.balance {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.balance h2 {
+    font-family: 'Rische';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 100%;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+}
+
+.welcome {
+    margin-top: 164px;
+}
+
+.welcome .left {
+    grid-column: span 7;
+}
+
+.welcome .right {
+    grid-column: span 5;
+}
+
+.welcome .title h2,
+.exterior h3,
+.cabins h3,
+.lounge h3 {
+    font-family: 'Rische';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 54px;
+    line-height: 110%;
+}
+
+.welcome .title p {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 160%;
+    letter-spacing: -0.01em;
+    color: #707070;
+    margin-top: 4px;
+}
+
+.welcome .title {
+    margin-bottom: 40px;
+}
+
+.welcome .grid .left>div:not(:first-child) {
+    padding: 40px 0;
+    border-top: 1px #E4E4E4 solid;
+}
+
+.welcome .content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.welcome .content>div {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.welcome .content .icon img {
+    width: 24px;
+    height: 24px;
+}
+
+.welcome .content .text h3 {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 160%;
+}
+
+.welcome .content .text p,
+.captain-title p,
+.captain .text p,
+.technical-details p,
+.cabins span {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 160%;
+    color: #707070;
+}
+
+.captain {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.captain-title {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.captain img {
+    width: 44px;
+    height: 44px;
+}
+
+.captain-title p {
+    margin-top: 8px;
+}
+
+.basic-details h3,
+.technical-details h3,
+.crew h3,
+.cabin-features h3 {
+    margin-bottom: 40px;
+}
+
+.basic-details h3,
+.technical-details h3,
+.captain-title h3,
+.crew h3,
+.ameneties h3,
+.cabin-features h3 {
+    font-family: 'Rische';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0.03em;
+}
+
+.basic-details .content,
+.crew .content {
+    display: grid;
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+    gap: 32px;
+    row-gap: 0;
+}
+
+.basic-details .content>div,
+.crew .content>div,
+.ameneties .maxw>div,
+.cabin-features .maxw>div {
+    grid-column: span 3;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 24px;
+}
+
+.basic-details .content>div div,
+.crew .content>div div,
+.ameneties .maxw>div div,
+.cabin-features .maxw>div div {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.basic-details img,
+.crew img,
+.ameneties img,
+.cabin-features img {
+    width: 24px;
+    height: 24px;
+}
+
+.basic-details p,
+.technical-details h4,
+.crew p,
+.ameneties p,
+.cabins p,
+.cabin-features p {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+}
+
+.technical-details>div {
+    display: flex;
+    gap: 64px;
+}
+
+.crew {
+    padding-bottom: 0 !important;
+}
+
+.welcome .right {
+    position: relative;
+}
+
+.welcome .right img {
+    width: 670px;
+    height: auto;
+    position: absolute;
+    top: -44px;
+    left: 68px;
+}
+
+.welcome .right::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 68px;
+    width: 670px;
+    height: 2px;
+    border-bottom: 2px dashed #FF0000;
+    /*TODO zasto se ovo ne pojavljuje???*/
+}
+
+.blueprint {
+    margin-top: 180px;
+}
+
+.blueprint img {
+    width: 100%;
+    height: auto;
+}
+
+.blueprint .maxw>div {
+    display: flex;
+    gap: 48px;
+    align-items: start;
+    justify-content: center;
+    margin-top: 64px;
+}
+
+.blueprint p {
+    font-family: 'Rische';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0.03em;
+    opacity: 0.5;
+}
+
+.blueprint p.selected {
+    opacity: 1;
+    padding-bottom: 18px;
+    border-bottom: 1px solid #0047FF;
+}
+
+.exterior {
+    margin-top: 180px;
+}
+
+.exterior h3 {
+    grid-column: span 12;
+    margin-bottom: 40px;
+}
+
+.exterior img {
+    width: 100%;
+    height: auto;
+}
+
+.exterior .left {
+    grid-column: span 8;
+    height: 100%;
+    max-height: 508px;
+}
+
+.exterior .right {
+    grid-column: span 4;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    position: relative;
+}
+
+.all-photos {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 12px 16px;
+    background: #fff;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    border: none;
+}
+
+.all-photos img {
+    width: 24px;
+    height: 24px;
+}
+
+.all-photos p {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0.23em;
+}
+
+.ameneties {
+    margin-top: 64px;
+}
+
+.ameneties h3 {
+    grid-column: span 12;
+    margin-bottom: 40px;
+}
+
+.ameneties .maxw>div {
+    grid-column: span 3;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.cabins {
+    margin-top: 180px;
+}
+
+.cabins h3 {
+    grid-column: span 12;
+    margin-bottom: 40px;
+}
+
+.cabin {
+    grid-column: span 4;
+}
+
+.cabin img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 64px;
+}
+
+.cabin .icon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 20px;
+}
+
+.cabin-features {
+    margin-top: 64px;
+}
+
+.cabin-features h3,
+.lounge h3 {
+    grid-column: span 12;
+}
+
+.lounge {
+    margin-top: 256px;
+}
+
+.lounge h3 {
+    text-align: center;
+    margin-bottom: 88px;
+}
+
+.lounge p {
+    font-family: 'Rische';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 52px;
+}
+
+.lounge img {
+    width: 100%;
+    height: auto;
+}
+
+.image1 {
+    grid-column: 2/5;
+}
+
+.image2 {
+    grid-column: 6/11;
+    margin-top: 73px;
+}
+
+.image3 {
+    grid-column: span 7;
+    position: relative;
+    left: -71px;
+    margin-top: 200px;
+}
+
+.image3 img {
+    max-width: 640px;
+    height: auto;
+}
+
+.image4 {
+    margin-top: 201px;
+    grid-column: 8/span 4;
+}
+
+.image4 img {
+    max-width: 326px;
+}
+
+.image4 p {
+    margin-bottom: 220px;
+}
+
+.image5 {
+    grid-column: 4/span 6;
+    margin-top: 256px;
+}
+
+.image6 {
+    grid-column: 2/span 5;
+    text-align: right;
+}
+
+.image6 p {
+    margin-bottom: 140px;
+    margin-top: 224px;
+}
+
+.image7 {
+    grid-column: 8/13;
+    margin-top: 224px;
+}
+
+.image8 {
+    grid-column: 2/span 6;
+    margin-top: 200px;
+}
+
+.image9 {
+    grid-column: 9/13;
+    margin-top: 384px;
+}
+
+footer {
+    margin-top: 180px;
+}
+
+@media only screen and (max-width:1200px) {
+
+    .welcome .title h2,
+    .exterior h3,
+    .cabins h3,
+    .lounge h3 {
+        font-size: 41px;
+    }
+
+    .welcome .right img {
+        width: 500px;
+        left: 40px;
+    }
+
+    .welcome .right::after {
+        left: 40px;
+    }
+
+    .all-photos {
+        padding: 10px 12px;
+    }
+
+    .all-photos img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .all-photos p {
+        bottom: 10px;
+        right: 10px;
+    }
+
+    .basic-details p,
+    .technical-details h4,
+    .crew p,
+    .ameneties p,
+    .cabins p,
+    .cabin-features p {
+        font-size: 14px;
+        line-height: 110%;
+    }
+
+    .basic-details .content>div div,
+    .crew .content>div div,
+    .ameneties .maxw>div div,
+    .cabin-features .maxw>div div {
+        height: 3.5em;
+    }
+
+    .lounge p {
+        font-size: 32px;
+    }
+}
+
+@media only screen and (max-width:1024px) {
+    .container {
+        padding: 0 60px !important;
+    }
+
+    .balance h2 {
+        font-size: 54px;
+    }
+
+    .welcome .content .text p,
+    .captain-title p,
+    .captain .text p,
+    .technical-details p,
+    .cabins span {
+        font-size: 12px;
+    }
+
+    .welcome .content .text h3 {
+        font-size: 16px;
+    }
+
+    .basic-details h3,
+    .technical-details h3,
+    .captain-title h3,
+    .crew h3,
+    .ameneties h3,
+    .cabin-features h3 {
+        font-size: 22px;
+    }
+
+    .welcome,
+    .blueprint,
+    .exterior,
+    .cabins,
+    .lounge {
+        margin-top: 100px;
+    }
+
+    .welcome .right img,
+    .welcome .right::after {
+        width: 380px;
+        left: 12px;
+    }
+
+    .welcome .title h2,
+    .exterior h3,
+    .cabins h3,
+    .lounge h3 {
+        font-size: 35px;
+    }
+
+    .welcome .title {
+        margin-bottom: 20px;
+    }
+
+    .welcome .grid .left>div:not(:first-child) {
+        padding: 20px 0;
+    }
+
+    .basic-details h3,
+    .technical-details h3,
+    .crew h3,
+    .cabin-features h3 {
+        margin-bottom: 20px;
+    }
+
+    .blueprint p {
+        font-size: 20px;
+    }
+
+    .blueprint .maxw>div {
+        gap: 32px;
+    }
+
+    .exterior .left {
+        grid-column: 2/span 10;
+        margin-bottom: 32px;
+    }
+
+    .exterior .right {
+        grid-column: 2/span 10;
+    }
+
+    .exterior img {
+        max-width: 500px;
+    }
+
+    .exterior .left,
+    .exterior .right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .all-photos {
+        bottom: 20px;
+        right: 12vw;
+    }
+}

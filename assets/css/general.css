@@ -48,7 +48,7 @@ body {
 .mobile-menu {
     display: none;
     height: 16px;
-    width: auto;
+    width: 32px;
     padding-top: 10px;
 }
 
@@ -210,6 +210,37 @@ header>div {
     margin-right: 60px;
 }
 
+.landing {
+    height: 100vh;
+    background-blend-mode: darken;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: -1;
+}
+
+header {
+    position: static !important;
+}
+
+header.maxw {
+    position: relative;
+}
+
+.desktop-menu {
+    color: #fff;
+}
+
+.scroll {
+    height: 26px;
+    width: auto;
+    position: absolute;
+    bottom: 48px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 
 @media only screen and (max-width:1200px) {
 
@@ -238,6 +269,10 @@ header>div {
 
     .contact-other a:not(:last-of-type) {
         margin-right: 0px;
+    }
+
+    .left>div a {
+        font-size: 33px;
     }
 }
 
@@ -294,6 +329,7 @@ header>div {
     .grid {
         grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
         gap: 24px;
+        row-gap: 0;
     }
 
     .contact {
@@ -365,5 +401,9 @@ header>div {
     .contact-other a {
         font-size: 10px;
         line-height: 25px;
+    }
+
+    .scroll {
+        display: none;
     }
 }
